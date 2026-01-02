@@ -17,13 +17,26 @@ export default function Hero() {
     (img) => img.id === 'hero-background'
   );
 
+  const bgImageUrl = backgroundImage?.imageUrl && typeof backgroundImage.imageUrl === 'string' 
+    ? backgroundImage.imageUrl 
+    : (backgroundImage?.imageUrl as any)?.src || '';
+
+  const avatarImageUrl = avatarImage?.imageUrl && typeof avatarImage.imageUrl === 'string'
+    ? avatarImage.imageUrl
+    : (avatarImage?.imageUrl as any)?.src || '';
+
   return (
-    <section id="about" className="relative w-full py-20 md:py-32 overflow-hidden">
-      <div
-        className="absolute inset-0 -z-20 h-full w-full bg-cover bg-center"
-        style={{ backgroundImage: `url(${backgroundImage?.imageUrl})` }}
-      />
-      <div className="absolute inset-0 -z-10 h-full w-full bg-background/60 backdrop-blur-sm" />
+    <section 
+      id="about" 
+      className="relative w-full py-20 md:py-32 overflow-hidden min-h-[600px]"
+      style={{
+        backgroundImage: `url('${bgImageUrl}')`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundAttachment: 'fixed'
+      }}
+    >
+      <div className="absolute inset-0 -z-10 h-full w-full bg-background/20 backdrop-blur-sm" />
       <div className="container grid grid-cols-1 items-center gap-12 md:grid-cols-2 lg:gap-20">
         <div className="flex flex-col items-start gap-8">
             <div className="space-y-4">
@@ -53,7 +66,7 @@ export default function Hero() {
             <div className="absolute -z-10 h-[350px] w-[350px] rounded-full bg-primary/20 blur-3xl lg:h-[500px] lg:w-[500px]"></div>
             <Avatar className="h-80 w-80 border-4 border-primary/20 shadow-2xl lg:h-[400px] lg:w-[400px]">
                 <AvatarImage
-                src={avatarImage?.imageUrl}
+                src={avatarImageUrl}
                 alt={profileData.name}
                 data-ai-hint={avatarImage?.imageHint}
                 />
