@@ -20,3 +20,12 @@ export const PlaceHolderImages: ImagePlaceholder[] = data.placeholderImages.map(
   }
   return p as ImagePlaceholder;
 });
+
+// Helper function to extract URL from StaticImageData or string
+export const getImageUrl = (imageUrl: string | StaticImageData): string => {
+  if (typeof imageUrl === 'string') {
+    return imageUrl;
+  }
+  // StaticImageData object has a 'src' property
+  return (imageUrl as any).src || '';
+};

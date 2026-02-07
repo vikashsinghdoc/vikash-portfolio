@@ -1,6 +1,6 @@
 import type { Profile, Experience, Education, Skill, Project } from '@/lib/types';
 import { Github, GitMerge, TestTube, Code, Network, RefreshCw, FileText, Briefcase, GraduationCap, Mail, Phone, Database, Cog, BrainCircuit, Rocket } from 'lucide-react';
-import { SiSpringboot, SiGatling, SiCucumber, SiPostman, SiJenkins, SiDocker, SiTypescript, SiJavascript, SiJava, SiJira, SiSelenium, SiGnubash, SiGradle, SiApachemaven, SiGithubactions } from 'react-icons/si';
+import { SiSpringboot, SiGatling, SiCucumber, SiPostman, SiJenkins, SiDocker, SiTypescript, SiJavascript, SiJira, SiSelenium, SiGnubash, SiGradle, SiApachemaven, SiGithubactions } from 'react-icons/si';
 import { GrTest } from "react-icons/gr";
 import { FaJava } from "react-icons/fa";
 
@@ -8,7 +8,7 @@ export const profileData: Profile = {
   name: 'Vikash Kumar Singh',
   avatar: '1',
   title: 'QA Lead | Senior Consultant',
-  bio: 'With 9 years of experience as a Quality Automation Specialist, I build scalable automation frameworks, develop backend REST APIs for test infrastructure, and drive CI/CD-enabled quality engineering practices to deliver robust, business-impacting QA solutions.',
+  bio: 'With 7+ years of experience as a Quality Automation Specialist, I build scalable automation frameworks, develop backend REST APIs for test infrastructure, and drive CI/CD-enabled quality engineering practices to deliver robust, business-impacting QA solutions.',
   email: 'vikashsinghdoc@gmail.com',
   phone: '9148938628',
   social: {

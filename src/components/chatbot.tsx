@@ -18,7 +18,7 @@ import { Loader2, Bot, User, CornerDownLeft } from 'lucide-react';
 import { ScrollArea } from './ui/scroll-area';
 import { Avatar, AvatarFallback, AvatarImage } from './ui/avatar';
 import { profileData } from '@/lib/data';
-import { PlaceHolderImages } from '@/lib/placeholder-images';
+import { PlaceHolderImages, getImageUrl } from '@/lib/placeholder-images';
 import type { Message } from '@/ai/flows/chatbot';
 import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
@@ -85,7 +85,7 @@ export function Chatbot() {
       <DialogTrigger asChild>
         <Button variant="outline" size="lg" className="w-full sm:w-auto">
           <Bot className="mr-2 h-4 w-4" />
-          Ask AI
+          Ask About Me
         </Button>
       </DialogTrigger>
       <DialogContent className="max-w-2xl h-[70vh] flex flex-col">
@@ -104,7 +104,7 @@ export function Chatbot() {
                 <div key={index} className={`flex items-start gap-4 ${message.role === 'user' ? 'justify-end' : ''}`}>
                 {message.role === 'assistant' && (
                     <Avatar className="h-8 w-8 border-2 border-primary/40">
-                        <AvatarImage src={avatarImage?.imageUrl} alt="Vikash Kumar Singh" />
+                        <AvatarImage src={getImageUrl(avatarImage?.imageUrl || '')} alt="Vikash Kumar Singh" />
                         <AvatarFallback>{profileData.name.charAt(0)}</AvatarFallback>
                     </Avatar>
                 )}
@@ -125,7 +125,7 @@ export function Chatbot() {
             {isLoading && (
                 <div className="flex items-start gap-4">
                     <Avatar className="h-8 w-8 border-2 border-primary/40">
-                        <AvatarImage src={avatarImage?.imageUrl} alt="Vikash Kumar Singh" />
+                        <AvatarImage src={getImageUrl(avatarImage?.imageUrl || '')} alt="Vikash Kumar Singh" />
                         <AvatarFallback>{profileData.name.charAt(0)}</AvatarFallback>
                     </Avatar>
                     <div className="rounded-lg p-3 max-w-[80%] bg-muted">
