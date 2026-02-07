@@ -33,13 +33,6 @@ export const workExperienceData: Experience[] = [
     description: '• Contributed extensively to UI automation using Java + Selenium + (BDD)Cucumber,, improving stability of existing frameworks by enhancing utilities, optimizing waits, and reducing flaky tests.\n• Strengthened API automation using RestAssured, covering response validations, schema checks, API chaining, authentication, and negative test scenarios.\n• Conducted integration testing covering UI testing, API validation, and DB validation, ensuring 98% end-to-end consistency.',
   },
   {
-    title: 'Senior Technical Engineer (ERP)',
-    company: 'Synchronos Solutions Pvt. Ltd.',
-    startDate: 'Oct 2018',
-    endDate: 'Dec 2019',
-    description: '• Worked on automation of ERP modules using Java + Selenium, developing reusable page objects and executing regression and smoke suites.\n• Added API-level validations using RestAssured to verify backend data integrity for ERP workflows.\n• Integrated the automation suite with CI/CD pipelines for continuous execution and rapid feedback.',
-  },
-  {
     title: 'Application Engineer (CRM)',
     company: 'I Focus Solutions India Pvt Ltd.',
     startDate: 'Mar 2017',
