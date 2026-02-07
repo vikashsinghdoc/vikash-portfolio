@@ -29,6 +29,7 @@ export default function Experience() {
                   </p>
                   <h3 className="mt-2 text-xl font-bold text-primary">{job.title}</h3>
                   <p className="mt-1 text-lg font-semibold">{job.company}</p>
+                  {job.domain && <p className="mt-1 text-sm text-muted-foreground italic">{job.domain}</p>}
                   <ul className="mt-4 list-disc space-y-2 pl-5 text-muted-foreground">
                     {job.description
                       .split('•')

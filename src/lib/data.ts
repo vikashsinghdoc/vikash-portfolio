@@ -21,6 +21,7 @@ export const workExperienceData: Experience[] = [
   {
     title: 'Senior Consultant',
     company: 'Capgemini (Client: Morgan Stanley)',
+    domain: 'Data - Governance',
     startDate: 'Jan 2023',
     endDate: 'Present',
     description: '• Architected and developed internal backend REST APIs using Spring Boot to fetch test data, trigger events, and validate microservice flows, accelerating automation velocity by 15–20%.\n• Designed and developed a full end-to-end automation framework using Java + Selenium + RestAssured + Spring Boot + (BDD)Cucumber, enabling unified testing across UI, API, DB, and microservices layers.\n• Developed a modern, robust automation framework using Playwright with TypeScript and JavaScript, enhancing end-to-end testing capabilities with improved performance and reliability.\n• Built a Java + Playwright automation framework integrated with Spring Boot for dependency management, offering faster, stable, and cross-browser execution.\n• Created a performance testing framework using Java + Spring Boot + Gatling, enabling load, stress, and concurrency testing for internal microservices; reduced performance regression timelines by 50%.\n• Leveraged GitHub Copilot extensively to accelerate framework development, automate repetitive coding patterns, and generate high-quality utilities, improving overall development speed and consistency across the automation suite.',
@@ -28,6 +29,7 @@ export const workExperienceData: Experience[] = [
   {
     title: 'Test Specialist',
     company: 'Mindtree Ltd. (Client: Deloitte)',
+    domain: 'Finance - Wealth Management',
     startDate: 'Mar 2020',
     endDate: 'Jan 2023',
     description: '• Contributed extensively to UI automation using Java + Selenium + (BDD)Cucumber,, improving stability of existing frameworks by enhancing utilities, optimizing waits, and reducing flaky tests.\n• Strengthened API automation using RestAssured, covering response validations, schema checks, API chaining, authentication, and negative test scenarios.\n• Conducted integration testing covering UI testing, API validation, and DB validation, ensuring 98% end-to-end consistency.',
@@ -35,6 +37,7 @@ export const workExperienceData: Experience[] = [
   {
     title: 'Application Engineer (CRM)',
     company: 'I Focus Solutions India Pvt Ltd.',
+    domain: 'Retail - Commerce',
     startDate: 'Mar 2017',
     endDate: 'Oct 2018',
     description: '• Conducted end-to-end manual testing for CRM modules including functional, regression, and integration testing.\n• Prepared test plans, scenarios, and detailed test cases ensuring thorough requirements coverage.\n• Logged, tracked, and followed up on defects in Jira, improving closure rates and reducing defect leakage.',
